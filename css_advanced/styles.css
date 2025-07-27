@@ -1,4 +1,4 @@
-/* Base Reset */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,7 +12,6 @@ body {
   line-height: 1.6;
 }
 
-/* HEADER - Over hero image */
 header {
   position: absolute;
   top: 0;
@@ -103,5 +102,44 @@ main section:nth-of-type(1) img {
   width: 100px;
   height: 100px;
   object-fit: cover;
+}
+
+main section:nth-of-type(2) {
+  background-color: #c271ff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+main section:nth-of-type(2) img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+main section:nth-of-type(2) blockquote {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+main section:nth-of-type(2) > div {
+  max-width: 600px;
+}
+
+main section:nth-of-type(2) .author {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+main section:nth-of-type(2) .title {
+  opacity: 0.9;
+  font-size: 0.95rem;
 }
 
