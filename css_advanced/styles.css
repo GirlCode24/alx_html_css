@@ -1,0 +1,107 @@
+/* Base Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER - Over hero image */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 20px 40px;
+  background: transparent;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav img {
+  height: 40px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* HERO SECTION */
+main section:nth-of-type(1) {
+  background: 
+    url('./CSS\ Advanced/Object.png') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 180px 20px 100px;
+  position: relative;
+}
+
+main section:nth-of-type(1) h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+main section:nth-of-type(1) span {
+  display: inline-block;
+  margin: 5px 10px;
+  font-weight: 600;
+}
+
+main section:nth-of-type(1) button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #c271ff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Learn from pros */
+main section:nth-of-type(1) > div:nth-of-type(2) {
+  margin-top: 60px;
+}
+
+main section:nth-of-type(1) > div:nth-of-type(2) h2 {
+  margin-bottom: 40px;
+}
+
+main section:nth-of-type(1) > div:nth-of-type(2) > div {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+main section:nth-of-type(1) > div:nth-of-type(2) > div > div {
+  text-align: center;
+  width: 150px;
+}
+
+main section:nth-of-type(1) img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
