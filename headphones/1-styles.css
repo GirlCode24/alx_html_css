@@ -83,6 +83,14 @@ nav a {
 nav a:hover {
   color: var(--primary-color);
 }
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
 
 /* HERO SECTION */
 .hero {
@@ -324,5 +332,24 @@ nav a:hover {
   .services,
   .results-grid {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .menu-toggle {
+    display: block;
+  }
+  nav .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #0f1b2b;
+    position: absolute;
+    top: 60px;
+    right: 1rem;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  nav .nav-links.show {
+    display: flex;
   }
 }

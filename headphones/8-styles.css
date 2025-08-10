@@ -91,6 +91,7 @@ nav a:hover {
   color: white;
   cursor: pointer;
 }
+
 /* HERO SECTION */
 .hero {
   background: url('./images/headphones_hero_1.jpg') center/cover no-repeat;
@@ -361,6 +362,48 @@ footer p {
   margin-top: 1rem;
   font-size: 0.8rem;
   color: #aaa;
+}
+/* Animation */
+@keyframes floaty {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-5px) scale(1.02);
+  }
+}
+
+.services .service,
+.results-grid .result-card {
+  animation: floaty 3s ease-in-out infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+
+.services .service:hover,
+.results-grid .result-card:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  opacity: 0.95;
+}
+
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+
+.services .service.bounce:hover,
+.results-grid .result-card.bounce:hover {
+  animation: bounce 0.6s;
 }
 
 
