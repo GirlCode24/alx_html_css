@@ -143,3 +143,52 @@ main section:nth-of-type(2) .title {
   font-size: 0.95rem;
 }
 
+/* Membership Section */
+.membership {
+  background-color: #071629;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.membership h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.membership h2 span {
+  color: #c271ff;
+}
+
+.membership-features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.feature {
+  max-width: 200px;
+  text-align: center;
+}
+
+.feature img {
+  width: 40px;
+  margin-bottom: 15px;
+}
+
+.feature h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.feature p {
+  font-size: 0.85rem;
+  color: #bbb;
+}
+
+.register-btn {
+  background-color: #c271ff;
+}
